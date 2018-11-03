@@ -1,17 +1,17 @@
-package decoratorPattern.codiment;
+package decorator.pattern.codiment;
 
-import decoratorPattern.BasePizza;
-import decoratorPattern.codimentTopping;
+import decorator.pattern.BasePizza;
+import decorator.pattern.codimentTopping;
 
-public class Sausage extends codimentTopping {
+public class Cheese extends codimentTopping {
 
     double cost;
     String description;
-    public Sausage(BasePizza basePizza)
+    public Cheese(BasePizza basePizza)
     {
         super.basePizza=basePizza;
-        this.cost=30.0;
-        this.description=", Sausage";
+        this.cost=50.0;
+        this.description=", cheese";
     }
     @Override
     public double getCost() {
@@ -23,4 +23,3 @@ public class Sausage extends codimentTopping {
         return basePizza.getDescription()+this.description;
     }
 }
-

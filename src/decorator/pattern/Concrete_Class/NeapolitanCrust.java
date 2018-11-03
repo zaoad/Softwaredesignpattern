@@ -1,6 +1,6 @@
-package decoratorPattern.Concrete_Class;
+package decorator.pattern.Concrete_Class;
 
-import decoratorPattern.BasePizza;
+import decorator.pattern.BasePizza;
 
 public class NeapolitanCrust extends BasePizza {
     public NeapolitanCrust() {

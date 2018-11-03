@@ -1,17 +1,17 @@
-package decoratorPattern.codiment;
+package decorator.pattern.codiment;
 
-import decoratorPattern.BasePizza;
-import decoratorPattern.codimentTopping;
+import decorator.pattern.BasePizza;
+import decorator.pattern.codimentTopping;
 
-public class Bacon extends codimentTopping {
+public class Onion extends codimentTopping {
 
     double cost;
     String description;
-    public Bacon(BasePizza basePizza)
+    public Onion(BasePizza basePizza)
     {
         super.basePizza=basePizza;
-        this.cost=75.0;
-        this.description=", Bacon";
+        this.cost=20.0;
+        this.description=", Onion";
     }
     @Override
     public double getCost() {

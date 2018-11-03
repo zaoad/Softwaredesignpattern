@@ -1,4 +1,4 @@
-package decoratorPattern;
+package decorator.pattern;
 
 public abstract class BasePizza {
     public double cost;

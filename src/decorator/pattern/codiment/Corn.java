@@ -1,16 +1,16 @@
-package decoratorPattern.codiment;
+package decorator.pattern.codiment;
 
-import decoratorPattern.BasePizza;
-import decoratorPattern.codimentTopping;
+import decorator.pattern.BasePizza;
+import decorator.pattern.codimentTopping;
 
-public class Salad extends codimentTopping {
+public class Corn extends codimentTopping {
 
     double cost;
     String description;
-    public Salad(BasePizza basePizza)
+    public Corn(BasePizza basePizza)
     {
         super.basePizza=basePizza;
-        this.cost=90.0;
+        this.cost=110.0;
         this.description=", cheese";
     }
     @Override

@@ -1,10 +1,11 @@
-package decoratorPattern;
+package decorator.pattern;
 
-import decoratorPattern.Concrete_Class.Flatbread;
-import decoratorPattern.Concrete_Class.NeapolitanCrust;
-import decoratorPattern.Concrete_Class.SicilianStyle;
-import decoratorPattern.Concrete_Class.ThinCrust;
-import decoratorPattern.codiment.*;
+import decorator.pattern.Concrete_Class.SicilianStyle;
+import decorator.pattern.codiment.*;
+import decorator.pattern.Concrete_Class.Flatbread;
+import decorator.pattern.Concrete_Class.NeapolitanCrust;
+import decorator.pattern.Concrete_Class.ThinCrust;
+
 
 public class PizzaClass {
     public static void main(String[] args) {
@@ -26,9 +27,5 @@ public class PizzaClass {
         BasePizza pizza3=new SicilianStyle();
         pizza3=new Cheese(pizza3);
         System.out.println(pizza3.getDescription()+" cost: "+pizza3.getCost());
-
-
-
-
     }
 }
